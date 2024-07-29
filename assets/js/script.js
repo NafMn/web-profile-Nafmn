@@ -38,5 +38,15 @@ if (savedTheme) {
   }
 }
 
-
+// experient
+document.querySelectorAll('.experience-card').forEach(card => {
+  card.addEventListener('click', function() {
+      const description = this.querySelector('.description');
+      if (description.style.display === 'none' || description.style.display === '') {
+          description.style.display = 'block';
+      } else {
+          description.style.display = 'none';
+      }
+  });
+});
 
